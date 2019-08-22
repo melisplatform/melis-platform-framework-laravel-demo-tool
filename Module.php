@@ -7,7 +7,7 @@
  *
  */
 
-namespace Melisplatformframeworklaraveldemotool;
+namespace MelisPlatformFrameworkLaravelDemoTool;
 
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;

@@ -31,7 +31,7 @@ return [
                                                 'icon' => 'fa fa-puzzle-piece',
                                             ],
                                             'forward' => [
-                                                'module' => 'Melisplatformframeworklaraveldemotool',
+                                                'module' => 'MelisPlatformFrameworkLaravelDemoTool',
                                                 'controller' => 'Index',
                                                 'action' => 'render-tool1',
                                                 'jscallback' => '',
@@ -46,7 +46,7 @@ return [
                                                 'icon' => 'fa fa-puzzle-piece',
                                             ],
                                             'forward' => [
-                                                'module' => 'Melisplatformframeworklaraveldemotool',
+                                                'module' => 'MelisPlatformFrameworkLaravelDemoTool',
                                                 'controller' => 'Index',
                                                 'action' => 'render-tool2',
                                                 'jscallback' => '',

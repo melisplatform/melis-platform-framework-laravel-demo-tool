@@ -17,12 +17,12 @@ return [
         'routes' => [
         	'melis-backoffice' => [
                 'child_routes' => [
-                    'application-Melisplatformframeworklaraveldemotool' => [
+                    'application-MelisPlatformFrameworkLaravelDemoTool' => [
                         'type'    => 'Literal',
                         'options' => [
-                            'route'    => 'Melisplatformframeworklaraveldemotool',
+                            'route'    => 'MelisPlatformFrameworkLaravelDemoTool',
                             'defaults' => [
-                                '__NAMESPACE__' => 'Melisplatformframeworklaraveldemotool\Controller',
+                                '__NAMESPACE__' => 'MelisPlatformFrameworkLaravelDemoTool\Controller',
                             ],
                         ],
                         'may_terminate' => true,
@@ -55,7 +55,7 @@ return [
     ],
     'controllers' => [
         'invokables' => [
-            'Melisplatformframeworklaraveldemotool\Controller\Index' => 'Melisplatformframeworklaraveldemotool\Controller\IndexController',
+            'MelisPlatformFrameworkLaravelDemoTool\Controller\Index' => 'MelisPlatformFrameworkLaravelDemoTool\Controller\IndexController',
         ],
     ],
     'view_manager' => [
