@@ -13,50 +13,49 @@ return [
             'interface' => [
                 'meliscore_leftmenu' => [
                     'interface' => [
-                        'meliscustom_toolstree_section' => [
+
+                        'meliscore_toolstree_section' => [
                             'interface' => [
-                                'melisplatformframeworklaraveldemotool_conf' => [
+                                'meliscore_tool_creatrion_designs' => [
                                     'conf' => [
-                                        'id' => 'id_melisplatformframeworklaraveldemotool_leftnemu',
-                                        'melisKey' => 'melisplatformframeworklaraveldemotool_leftnemu',
-                                        'name' => 'tr_melisplatformframeworklaraveldemotool_tool',
-                                        'icon' => 'fa fa-puzzle-piece',
+                                        'id' => 'id_meliscore_tool_creatrion_designs',
+                                        'melisKey' => 'meliscore_tool_creatrion_designs',
+                                        'name' => 'tr_meliscore_tool_creatrion_designs',
+                                        'icon' => 'fa fa-paint-brush',
                                     ],
                                     'interface' => [
-                                        'melisplatformframeworklaraveldemotool_tool_1' => [
+
+                                        'meliscore_tool_tools' => [
                                             'conf' => [
-                                                'id' => 'id_melisplatformframeworklaraveldemotool_tool_1',
-                                                'melisKey' => 'melisplatformframeworklaraveldemotool_tool_1',
-                                                'name' => 'tr_melisplatformframeworklaraveldemotool_tool_1',
-                                                'icon' => 'fa fa-puzzle-piece',
+                                                'id' => 'id_meliscore_tool_tools',
+                                                'melisKey' => 'meliscore_tool_tools',
+                                                'name' => 'tr_meliscore_tool_tools',
+                                                'icon' => 'fa fa-magic',
                                             ],
-                                            'forward' => [
-                                                'module' => 'MelisPlatformFrameworkLaravelDemoTool',
-                                                'controller' => 'Index',
-                                                'action' => 'render-tool1',
-                                                'jscallback' => '',
-                                                'jsdatas' => []
-                                            ],
-                                        ],
-                                        'melisplatformframeworklaraveldemotool_tool_2' => [
-                                            'conf' => [
-                                                'id' => 'id_melisplatformframeworklaraveldemotool_tool_2',
-                                                'melisKey' => 'melisplatformframeworklaraveldemotool_tool_2',
-                                                'name' => 'tr_melisplatformframeworklaraveldemotool_tool_2',
-                                                'icon' => 'fa fa-puzzle-piece',
-                                            ],
-                                            'forward' => [
-                                                'module' => 'MelisPlatformFrameworkLaravelDemoTool',
-                                                'controller' => 'Index',
-                                                'action' => 'render-tool2',
-                                                'jscallback' => '',
-                                                'jsdatas' => []
-                                            ],
+                                            'interface' => [
+                                                'melisplatformframeworklaraveldemotool_tool' => [
+                                                    'conf' => [
+                                                        'id' => 'id_melisplatformframeworklaraveldemotool_tool',
+                                                        'melisKey' => 'melisplatformframeworklaraveldemotool_tool',
+                                                        'name' => 'tr_melisplatformframeworklaraveldemotool_tool',
+                                                        'icon' => 'fa fa-puzzle-piece',
+                                                    ],
+                                                    'forward' => [
+                                                        'module' => 'MelisPlatformFrameworkLaravelDemoTool',
+                                                        'controller' => 'Index',
+                                                        'action' => 'render-tool',
+                                                        'jscallback' => '',
+                                                        'jsdatas' => []
+                                                    ]
+                                                ]
+                                            ]
                                         ]
+
                                     ]
                                 ]
                             ]
                         ]
+
                     ]
                 ]
             ]
