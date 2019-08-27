@@ -19,7 +19,7 @@
     "dbdeploy": true
   },
   "require": {
-    "melisplatform/melisplatform/melis-platform-frameworks": "*"
+    "melisplatform/melisplatform/melis-platform-frameworks": "dev-master"
   },
   "autoload": {
     "psr-4": {
