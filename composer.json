@@ -18,15 +18,6 @@
     "module-name": "MelisPlatformFrameworkLaravelDemoTool",
     "dbdeploy": true
   },
-  "require": {
-    "melisplatform/melisplatform/melis-platform-frameworks": "*"
-  },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/melisplatform/melis-platform-frameworks"
-    }
-  ],
   "autoload": {
     "psr-4": {
       "MelisPlatformFrameworkLaravelDemoTool\\": "src/"
