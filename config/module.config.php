@@ -10,7 +10,7 @@
 return [
     'third-party-framework' => [
         'index-path' => [
-            '/mylaravel/public/index.php'
+            '/Laravel/public/index.php'
         ]
     ],
     'router' => [
