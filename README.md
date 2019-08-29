@@ -1,11 +1,10 @@
 # melis-platform-framework-laravel-demo-tool
 
-This module provides a simple tool that display a list of data that request from a third party framework
-which is Laravel.
+This module provides a simple tool displaying a list of data from the third party framework Laravel.
 
 ### Prerequisites
-This module requires melisplatform/melis-platform-frameworks in order to have this module running.
-This will automatically be done when using composer.
+This module requires melisplatform/melis-platform-frameworks.
+It will automatically be done when using composer.
 
 ### Installing
 ```
@@ -13,8 +12,7 @@ composer require melisplatform/melis-platform-framework-laravel-demo-tool
 ```
 
 ### Configuration
-This module also configured to access the Laravel framework inside directory of /thirdparty
-By just adding this data to the array inside config/module.coonfig.php file:
+This module is also configured to access the Laravel framework inside the directory of /thirdparty by just adding the data to the array inside config/module.config.php file:
 ```
 return [
   'third-party-framework' => [
