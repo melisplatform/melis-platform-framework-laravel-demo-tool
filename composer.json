@@ -15,8 +15,14 @@
     "module"
   ],
   "require": {
-    "melisplatform/melis-platform-frameworks": "dev-master as 1.1.x-dev"
+    "melisplatform/melis-platform-frameworks": "dev-master"
   },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/melisplatform/melis-platform-frameworks"
+    }
+  ],
   "extra": {
     "module-name": "MelisPlatformFrameworkLaravelDemoTool",
     "dbdeploy": true
