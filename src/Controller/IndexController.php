@@ -29,7 +29,7 @@ class IndexController extends AbstractActionController
          * and getting the response by calling the the getContent() method after
          */
         $thirdPartySrv = $this->getServiceLocator()->get('MelisPlatformService');
-        $thirdPartySrv->setRoute('/list?testwtf=123');
+        $thirdPartySrv->setRoute('/melis/list');
         $response = $thirdPartySrv->getContent();
 
         $view->content = $response;
