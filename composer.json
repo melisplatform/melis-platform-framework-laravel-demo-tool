@@ -15,7 +15,7 @@
     "module"
   ],
   "require": {
-    "melisplatform/melis-platform-frameworks": "dev-master"
+    "melisplatform/melis-platform-frameworks": "*"
   },
   "repositories": [
     {
