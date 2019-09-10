@@ -15,9 +15,9 @@
     "module"
   ],
   "require": {
-    "melisplatform/melis-platform-frameworks": "dev-master",
-    "melisplatform/melis-platform-framework-laravel": "dev-master",
-    "melisplatform/melis-platform-framework-laravel-demo-tool-logic": "dev-master"
+    "melisplatform/melis-platform-frameworks": "^3.1",
+    "melisplatform/melis-platform-framework-laravel": "^3.1",
+    "melisplatform/melis-platform-framework-laravel-demo-tool-logic": "^3.1"
   },
   "extra": {
     "module-name": "MelisPlatformFrameworkLaravelDemoTool",
