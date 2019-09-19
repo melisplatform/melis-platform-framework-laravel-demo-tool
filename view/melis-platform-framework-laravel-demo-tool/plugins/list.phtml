@@ -1,0 +1,9 @@
+<?php
+$widths = null;
+if($this->fromDragDropZone) {
+    $widths = "$this->widthDesktop $this->widthTablet $this->widthMobile";
+}
+?>
+<div class="<?= $widths; ?>" style="width: 100%;">
+    <?php echo $this->content ?>
+</div>

@@ -58,11 +58,17 @@ return [
             'MelisPlatformFrameworkLaravelDemoTool\Controller\Index' => 'MelisPlatformFrameworkLaravelDemoTool\Controller\IndexController',
         ],
     ],
+    'controller_plugins' => array(
+        'invokables' => array(
+            'MelisPlatformFrameworkLaravelDemoToolPlugin' => 'MelisPlatformFrameworkLaravelDemoTool\Controller\Plugin\MelisPlatformFrameworkLaravelDemoToolPlugin',
+        )
+    ),
     'view_manager' => [
         'display_not_found_reason' => true,
         'display_exceptions'       => true,
         'doctype'                  => 'HTML5',
         'template_map' => [
+            'MelisPlatformFrameworkLaravelDemoTool/list' => __DIR__ . '/../view/melis-platform-framework-laravel-demo-tool/plugins/list.phtml',
         ],
         'template_path_stack' => [
             __DIR__ . '/../view',
