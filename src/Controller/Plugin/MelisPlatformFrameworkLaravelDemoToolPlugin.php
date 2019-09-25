@@ -77,4 +77,35 @@ class MelisPlatformFrameworkLaravelDemoToolPlugin extends MelisTemplatingPlugin
         // return the variable array and let the view be created
         return $viewVariables;
     }
+    
+    /**
+     * This method saves the XML version of this plugin in DB, for this pageId
+     * Automatically called from savePageSession listener in PageEdition
+     */
+    public function savePluginConfigToXml($parameters)
+    {
+        $xmlValueFormatted = '';
+        // template_path is mandatory for all plugins
+        if (!empty($parameters['template_path']))
+            $xmlValueFormatted .= "\t\t" . '<template_path><![CDATA[' . $parameters['template_path'] . ']]></template_path>';
+        // for resizing
+        $widthDesktop = null;
+        $widthMobile   = null;
+        $widthTablet  = null;
+        if (! empty($parameters['melisPluginDesktopWidth'])) {
+            $widthDesktop =  " width_desktop=\"" . $parameters['melisPluginDesktopWidth'] . "\" ";
+        }
+        if (! empty($parameters['melisPluginMobileWidth'])) {
+            $widthMobile =  "width_mobile=\"" . $parameters['melisPluginMobileWidth'] . "\" ";
+        }
+        if (! empty($parameters['melisPluginTabletWidth'])) {
+            $widthTablet =  "width_tablet=\"" . $parameters['melisPluginTabletWidth'] . "\" ";
+        }
+        // Something has been saved, let's generate an XML for DB
+        $xmlValueFormatted = "\t" . '<' . $this->pluginXmlDbKey . ' id="' . $parameters['melisPluginId'] . '"' .$widthDesktop . $widthMobile . $widthTablet . '>' .
+            $xmlValueFormatted .
+            "\t" . '</' . $this->pluginXmlDbKey . '>' . "\n";
+        return $xmlValueFormatted;
+    }
+}
 }
