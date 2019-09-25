@@ -21,7 +21,9 @@
   },
   "extra": {
     "module-name": "MelisPlatformFrameworkLaravelDemoTool",
-    "dbdeploy": true
+    "dbdeploy": true,
+    "melis-site": false,
+    "melis-module-category": "core"
   },
   "autoload": {
     "psr-4": {
