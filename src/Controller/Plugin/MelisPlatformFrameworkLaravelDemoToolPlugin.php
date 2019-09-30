@@ -108,4 +108,3 @@ class MelisPlatformFrameworkLaravelDemoToolPlugin extends MelisTemplatingPlugin
         return $xmlValueFormatted;
     }
 }
-}
