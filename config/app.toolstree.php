@@ -44,6 +44,23 @@ return [
                                                         'action' => 'render-tool',
                                                         'jscallback' => '',
                                                         'jsdatas' => []
+                                                    ],
+                                                    'interface' => [
+                                                        'melisplatformframeworklaraveldemotool_generic_modal_tool' => [
+                                                            'conf' => [
+                                                                'id' => 'id_melisplatformframeworklaraveldemotool_generic_modal_tool',
+                                                                'melisKey' => 'melisplatformframeworklaraveldemotool_generic_modal_tool',
+                                                                'name' => 'tr_melisplatformframeworklaraveldemotool_generic_modal_tool',
+                                                                'icon' => 'fa fa-plus'
+                                                            ],
+                                                            'forward' => [
+                                                                'module' => 'MelisPlatformFrameworkLaravelDemoTool',
+                                                                'controller' => 'Index',
+                                                                'action' => 'render-modal-tool',
+                                                                'jscallback' => '',
+                                                                'jsdatas' => []
+                                                            ]
+                                                        ]
                                                     ]
                                                 ]
                                             ]

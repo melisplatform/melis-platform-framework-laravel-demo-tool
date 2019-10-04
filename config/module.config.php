@@ -13,6 +13,22 @@ return [
             '/Laravel/public/index.php'
         ]
     ],
+    'plugins' => [
+        'melisplatformframeworklaraveldemotool' => [
+            'ressources' => array(
+                'js' => array(
+                    '/MelisPlatformFrameworkLaravelDemoTool/js/tool.js',
+                ),
+                /**
+                 * the "build" configuration compiles all assets into one file to make
+                 * lesser requests
+                 */
+                'build' => [
+                    'disable_bundle' => true,
+                ],
+            ),
+        ],
+    ],
     'router' => [
         'routes' => [
         	'melis-backoffice' => [
