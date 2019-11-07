@@ -37,6 +37,10 @@ class IndexController extends AbstractActionController
         return $view;
     }
 
+    /**
+     * Modal view container
+     * @return ViewModel
+     */
     public function renderModalToolAction()
     {
 
@@ -48,8 +52,10 @@ class IndexController extends AbstractActionController
          * by providing the Route of the request "/list" for example
          * and getting the response by calling the the getContent() method after
          */
+        // adding url parameter album id for update
+        $albumId = $this->params()->fromQuery('albumId') ? '/'.$this->params()->fromQuery('albumId', null): '';
         $thirdPartySrv = $this->getServiceLocator()->get('MelisPlatformService');
-        $thirdPartySrv->setRoute('/melis/laravel-album-form');
+        $thirdPartySrv->setRoute('/melis/laravel-album-form'.$albumId);
         $response = $thirdPartySrv->getContent();
 
         $view->content = $response;

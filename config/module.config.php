@@ -11,14 +11,17 @@ return [
     'third-party-framework' => [
         'index-path' => [
             '/Laravel/public/index.php'
+        ],
+        'translations' => [
+            MelisPlatformFrameworkLaravelDemoToolLogic\Providers\MelisAddTranslation::class
         ]
     ],
     'plugins' => [
         'melisplatformframeworklaraveldemotool' => [
-            'ressources' => array(
-                'js' => array(
+            'ressources' => [
+                'js' => [
                     '/MelisPlatformFrameworkLaravelDemoTool/js/tool.js',
-                ),
+                ],
                 /**
                  * the "build" configuration compiles all assets into one file to make
                  * lesser requests
@@ -26,7 +29,7 @@ return [
                 'build' => [
                     'disable_bundle' => true,
                 ],
-            ),
+            ],
         ],
     ],
     'router' => [
