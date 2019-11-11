@@ -13,7 +13,14 @@ return [
             '/Laravel/public/index.php'
         ],
         'translations' => [
-            MelisPlatformFrameworkLaravelDemoToolLogic\Providers\MelisAddTranslation::class
+            'locale' => [
+                'en_EN' => [
+                    __DIR__ .'/../../melis-platform-framework-laravel-demo-tool-logic/Resources/lang/en/messages.php'
+                ],
+                'fr_FR' => [
+                    __DIR__ .'/../../melis-platform-framework-laravel-demo-tool-logic/Resources/lang/fr/messages.php'
+                ]
+            ]
         ]
     ],
     'plugins' => [
