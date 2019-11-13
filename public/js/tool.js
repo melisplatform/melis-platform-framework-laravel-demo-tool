@@ -64,8 +64,13 @@ $(function(){
            translations.delete_title,
            translations.delete_confirm_message,
            function () {
-               $.post('/melis/laravel-delete-album/'+albumId).done(function(){
+               $.post('/melis/laravel-delete-album/'+albumId).done(function(res){
+
+                   var data = JSON.parse(res);
+
                    $(".melis-laravel-refresh").trigger("click");
+                   // Pop-up Notification
+                   melisHelper.melisOkNotification(data.title, data.message);
                    // Reload notification bell
                    melisCore.flashMessenger();
                });
