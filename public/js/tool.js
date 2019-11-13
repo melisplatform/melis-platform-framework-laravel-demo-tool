@@ -25,7 +25,7 @@ $(function(){
        var data = $("#laravel-album-form").serializeArray();
 
        var param = "";
-       var albumId = $(this).attr('id');
+       var albumId = $(this).data('id');
        if (typeof albumId !== "undefined"){
            param = "/"+albumId;
        }

@@ -34,7 +34,9 @@ return [
                  * lesser requests
                  */
                 'build' => [
-                    'disable_bundle' => true,
+                    'js' => [
+                        '/MelisPlatformFrameworkLaravelDemoTool/build/js/bundle.js',
+                    ]
                 ],
             ],
         ],
