@@ -39,12 +39,16 @@ $(function(){
                // hide modal
                $(".modal").modal("hide");
                $(".melis-laravel-refresh").trigger("click");
+               // Pop-up Notification
+               melisHelper.melisOkNotification(data.title, data.message);
            }else{
                // Melis js helper that pop-up input errors
                melisHelper.melisKoNotification(data.title, data.message, data.errors);
                // form errors
                errors = data.errors;
            }
+           // Reload notification bell
+           melisCore.flashMessenger();
            //  Melis js helper that highlight input errors
            melisCoreTool.highlightErrors(data.success, errors, "laravel-album-form");
        });
@@ -62,6 +66,8 @@ $(function(){
            function () {
                $.post('/melis/laravel-delete-album/'+albumId).done(function(){
                    $(".melis-laravel-refresh").trigger("click");
+                   // Reload notification bell
+                   melisCore.flashMessenger();
                });
            });
    });
