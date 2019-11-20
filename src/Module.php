@@ -57,8 +57,8 @@ class Module
         $locale = is_null($locale) ? 'en_EN' : $locale;
         // Load files
 
-        if (!empty($locale))
-        {
+        if (!empty($locale)){
+
             $translationType = [
                 'interface'
             ];

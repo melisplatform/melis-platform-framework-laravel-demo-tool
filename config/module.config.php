@@ -11,7 +11,35 @@ return [
     'third-party-framework' => [
         'index-path' => [
             '/Laravel/public/index.php'
+        ],
+        'translations' => [
+            'locale' => [
+                'en_EN' => [
+                    __DIR__ .'/../../melis-platform-framework-laravel-demo-tool-logic/Resources/lang/en/messages.php'
+                ],
+                'fr_FR' => [
+                    __DIR__ .'/../../melis-platform-framework-laravel-demo-tool-logic/Resources/lang/fr/messages.php'
+                ]
+            ]
         ]
+    ],
+    'plugins' => [
+        'melisplatformframeworklaraveldemotool' => [
+            'ressources' => [
+                'js' => [
+                    '/MelisPlatformFrameworkLaravelDemoTool/js/tool.js',
+                ],
+                /**
+                 * the "build" configuration compiles all assets into one file to make
+                 * lesser requests
+                 */
+                'build' => [
+                    'js' => [
+                        '/MelisPlatformFrameworkLaravelDemoTool/build/js/bundle.js',
+                    ]
+                ],
+            ],
+        ],
     ],
     'router' => [
         'routes' => [
