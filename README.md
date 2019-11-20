@@ -17,8 +17,8 @@ This module is also configured to access the Laravel framework inside the direct
 return [
   'third-party-framework' => [
      'index-path' => [
-        '/mylaravel/public/index.php'
-     ]
+        '/Laravel/public/index.php'
+     ],
    ],
    ...
 ]
