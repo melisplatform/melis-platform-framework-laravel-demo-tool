@@ -1,6 +1,6 @@
 # melis-platform-framework-laravel-demo-tool
 
-This module provides a simple tool displaying a list of data from the third party framework Laravel.
+This demo tool has for goal to show how you can use the framework Laravel inside Melis Platform, so you're not locked on ZF.
 
 ### Prerequisites
 This module requires ``melisplatform/melis-platform-frameworks`.
@@ -35,4 +35,4 @@ See also the list of [contributors](https://github.com/melisplatform/melis-core/
 
 ## License
 
-This project is licensed under the OSL-3.0 License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the OSL-3.0 License - see the [LICENSE](LICENSE) file for details
