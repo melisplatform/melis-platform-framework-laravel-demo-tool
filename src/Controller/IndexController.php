@@ -9,8 +9,8 @@
 
 namespace MelisPlatformFrameworkLaravelDemoTool\Controller;
 
-use Zend\Mvc\Controller\AbstractActionController;
-use Zend\View\Model\ViewModel;
+use Laminas\View\Model\ViewModel;
+use MelisCore\Controller\AbstractActionController;
 
 class IndexController extends AbstractActionController
 {
@@ -28,7 +28,7 @@ class IndexController extends AbstractActionController
          * by providing the Route of the request "/list" for example
          * and getting the response by calling the the getContent() method after
          */
-        $thirdPartySrv = $this->getServiceLocator()->get('MelisPlatformService');
+        $thirdPartySrv = $this->getServiceManager()->get('MelisPlatformService');
         $thirdPartySrv->setRoute('/melis/laravel-list');
         $response = $thirdPartySrv->getContent();
 
@@ -54,7 +54,7 @@ class IndexController extends AbstractActionController
          */
         // adding url parameter album id for update
         $albumId = $this->params()->fromQuery('albumId') ? '/'.$this->params()->fromQuery('albumId', null): '';
-        $thirdPartySrv = $this->getServiceLocator()->get('MelisPlatformService');
+        $thirdPartySrv = $this->getServiceManager()->get('MelisPlatformService');
         $thirdPartySrv->setRoute('/melis/laravel-album-form'.$albumId);
         $response = $thirdPartySrv->getContent();
 
@@ -62,5 +62,4 @@ class IndexController extends AbstractActionController
 
         return $view;
     }
-
 }
