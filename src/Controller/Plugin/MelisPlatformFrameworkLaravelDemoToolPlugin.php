@@ -65,7 +65,7 @@ class MelisPlatformFrameworkLaravelDemoToolPlugin extends MelisTemplatingPlugin
          * by providing the Route of the request "/list" for example
          * and getting the response by calling the the getContent() method after
          */
-        $thirdPartySrv = $this->getServiceLocator()->get('MelisPlatformService');
+        $thirdPartySrv = $this->getServiceManager()->get('MelisPlatformService');
         $thirdPartySrv->setRoute('/laravel-list');
         $response = $thirdPartySrv->getContent();
 
