@@ -1,34 +1,35 @@
 {
-  "name": "melisplatform/melis-platform-framework-laravel-demo-tool",
-  "description": "Melis Platform Frameworks Demo Tool",
-  "type": "melisplatform-module",
-  "license": "OSL-3.0",
-  "homepage": "https://github.com/melisplatform/melis-platform-framework-laravel-demo-tool",
-  "support": {
-    "source": "https://github.com/melisplatform/melis-platform-framework-laravel-demo-tool",
-    "issues": "https://github.com/melisplatform/melis-platform-framework-laravel-demo-tool/issues"
-  },
-  "keywords": [
-    "cms",
-    "melis",
-    "zf2",
-    "module"
-  ],
-  "require": {
-    "melisplatform/melis-platform-frameworks": "^3.2",
-    "melisplatform/melis-platform-framework-laravel": "^3.2",
-    "melisplatform/melis-platform-framework-laravel-demo-tool-logic": "^3.2"
-  },
-  "extra": {
-    "module-name": "MelisPlatformFrameworkLaravelDemoTool",
-    "dbdeploy": true,
-    "melis-site": false,
-    "melis-module-category": "core"
-  },
-  "autoload": {
-    "psr-4": {
-      "MelisPlatformFrameworkLaravelDemoTool\\": "src/"
-    }
-  },
-  "minimum-stability": "dev"
+	"name": "melisplatform/melis-platform-framework-laravel-demo-tool",
+	"description": "Melis Platform Frameworks Demo Tool",
+	"type": "melisplatform-module",
+	"license": "OSL-3.0",
+	"homepage": "https://github.com/melisplatform/melis-platform-framework-laravel-demo-tool",
+	"support": {
+		"source": "https://github.com/melisplatform/melis-platform-framework-laravel-demo-tool",
+		"issues": "https://github.com/melisplatform/melis-platform-framework-laravel-demo-tool/issues"
+	},
+	"keywords": [
+		"cms",
+		"melis",
+		"zf2",
+		"module"
+	],
+	"require": {
+		"php": "^7.1.3|^7.2|^7.3",
+		"melisplatform/melis-platform-frameworks": "^4.0",
+		"melisplatform/melis-platform-framework-laravel": "^4.0",
+		"melisplatform/melis-platform-framework-laravel-demo-tool-logic": "^4.0"
+	},
+	"extra": {
+		"module-name": "MelisPlatformFrameworkLaravelDemoTool",
+		"dbdeploy": true,
+		"melis-site": false,
+		"melis-module-category": "core"
+	},
+	"autoload": {
+		"psr-4": {
+			"MelisPlatformFrameworkLaravelDemoTool\\": "src/"
+		}
+	},
+	"minimum-stability": "dev"
 }
