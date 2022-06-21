@@ -16,9 +16,9 @@
 	],
 	"require": {
 		"php": "^7.3|^8.0",
-		"melisplatform/melis-platform-frameworks": "dev-update/php-8-upgrade as 4.0",
-		"melisplatform/melis-platform-framework-laravel": "dev-update/php-8-upgrade as 4.0",
-		"melisplatform/melis-platform-framework-laravel-demo-tool-logic": "dev-update/php-8-upgrade as 4.0"
+		"melisplatform/melis-platform-frameworks": "^5.0",
+		"melisplatform/melis-platform-framework-laravel": "^5.0",
+		"melisplatform/melis-platform-framework-laravel-demo-tool-logic": "^5.0"
 	},
 	"extra": {
 		"module-name": "MelisPlatformFrameworkLaravelDemoTool",
