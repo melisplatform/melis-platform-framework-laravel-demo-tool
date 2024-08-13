@@ -16,9 +16,9 @@
 	],
 	"require": {
 		"php": "^8.1|^8.3",
-		"melisplatform/melis-platform-frameworks": "^5.1",
-		"melisplatform/melis-platform-framework-laravel": "^5.1",
-		"melisplatform/melis-platform-framework-laravel-demo-tool-logic": "^5.1"
+		"melisplatform/melis-platform-frameworks": "^5.2",
+		"melisplatform/melis-platform-framework-laravel": "^5.2",
+		"melisplatform/melis-platform-framework-laravel-demo-tool-logic": "^5.2"
 	},
 	"extra": {
 		"module-name": "MelisPlatformFrameworkLaravelDemoTool",
